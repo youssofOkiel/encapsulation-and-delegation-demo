@@ -8,11 +8,14 @@ $warehouse = new Warehouse();
 
 // Dummy entry
 $itemSpecs = new ItemSpec('chees', 10.0, 'green');
-$itemSpecs2 = new ItemSpec('meat', 280, 'red');
+$itemSpecs2 = new ItemSpec('meat', 280, 'blue');
 
 $warehouse->addItem($itemSpecs);
 $warehouse->addItem($itemSpecs2);
 
-$searchItemSpec = new ItemSpec('meat', 10);
+$searchItemSpec = new ItemSpec('meat', 270);
 
-print_r($warehouse->search($searchItemSpec));
+echo "<pre>";
+    print_r($warehouse->getItems());
+    print_r($warehouse->search($searchItemSpec));
+echo "</pre>";

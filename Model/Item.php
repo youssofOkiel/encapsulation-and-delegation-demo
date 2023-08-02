@@ -22,6 +22,4 @@ class Item
   {
     return $this->itemSpec; 
   }
-
-  // .. setter and gettr for price 
 }
